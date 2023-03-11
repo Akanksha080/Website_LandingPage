@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--webpage css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/responsive.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+     <!--Simple lightbox css-->
+     <link rel="stylesheet" href="css/simple-lightbox.min.css">
+
+     
+
+    
+    
+    
+    
+    
+        </script>
+    <title>FashionTV landing page</title>
+</head>
+<body>
+    <script src="js/simple-lightbox.min.js"></script>
+    <nav>
+        <a href="#" class="logo">
+            <h1>
+                <span class="fash">Fash</span>
+                <span class="TV">TV</span>
+                <span class="fist">&#x1F44A</span>
+            </h1>
+        </a>
+           <!--Theme switcher-->
+    <div class="theme-switch">
+        <input type="checkbox" class="checkbox" id="checkbox" />
+            <label for="checkbox" class="label">
+                <ion-icon class="sun" name="partly-sunny-outline"></ion-icon>
+                <ion-icon class="moon" name="moon-outline"></ion-icon>
+                <div class="switcher"></div>
+            </label>        
+    </div>
+        <ul>
+            <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#stars" class="nav-link">Fash Stars</a>
+            </li>
+            <li class="nav-item">
+                <a href="#stakeholders" class="nav-link">Stakeholders</a>
+                <li class="nav-item">
+                    <a href="#sub" class="nav-link">Subscribe</a>
+                </li>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span ></span>
+            <span ></span>
+            <span ></span>
+        </div>
+
+        <script>
+            const hamburger=document.querySelector("hamburger");
+            const navMenu=document.querySelector("ul");
+    
+            function openMenu(){
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            }
+        </script>
+        
+        <script>
+            const navLink = document.querySelectorAll("#nav-link");
+
+            navLink.forEach((n) => n.addEventListener("click", closeMenu));
+            function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+}
+        </script>
+     
+
+    <!--checkbox -->
+    <script>
+        const checkbox = document.querySelector("#checkbox");
+    
+        checkbox.addEventListener("change", () => {
+        document.body.classList.toggle("dark");
+        });
+    </script>
+   
+    </nav>
+
+    
+
+    <section class="models">
+        <div class="intro-text">
+            <h1>
+                <span class="hear">Witness the Fasion</span>
+                <spna class="unfold">UNFOLD</spna>
+            </h1>
+            <p>
+               An online streaming platform for latest fashion shows,rampwalks,fashion talk shows <br>
+               going around the world.We also dedicate special time to vintage fashion of the bygone eras.
+            </p>
+            <a href="#" class="btn b1">Learn More</a>
+            <a href="#" class="btn b2">Subscribe Now</a>
+        </div>
+        <div class="i-frame">
+            <iframe src="" frameborder="10" width="560"
+            height="315" title="Youtube Video Player"
+            allow=accelerometer;autoplay;clipboard-write;encrypted-media;
+            gyroscope;picture-in-picture></iframe>
+            <div class="stand-1"></div>
+            <div class="stand-2"></div>
+        </div>
+    </section>
+
+    <!--about section-->
+    <section class="about" id="about">
+        <h3>Fash TV</h3>
+        <p>Our primary objective is to bring exclusive fashion shows to the world</p>
+
+        <h3>Its not fashion shows alone!</h3>
+        <p>We also air fashion talks guiding people on how to dress better and rampwalk guides and much more</p>
+    </section>
+
+    <!--models gallery-->
+    <section class="models" id="models">
+        <div class="models-gallery">
+            <a href="images/gigi.jpg" class="big">
+                <img src="images/gigi.jpg" alt="Gigi Hadid" title="Gigi Hadid">
+            </a>
+
+            <a href="images/luka.webp" class="big">
+                <img src="images/luka.webp" title="Luka Sabbat" alt="Luka">
+            </a>
+
+            <a href="images/kendall.jpg" class="big">
+                <img src="images/kendall.jpg" title="Kendall Jenner" alt="Kendall">
+            </a>
+
+            <a href="images/mathias.jpg" class="big">
+                <img src="images/mathias.jpg" title="Mathias Lauridsen" alt="Mathias">
+            </a>
+
+            <a href="images/naomi.jpg" class="big">
+                <img src="images/naomi.jpg" title="Naomi Camphbell" alt="Naomi">
+            </a>
+
+            <a href="images/sean.jpg" class="big">
+                <img src="images/sean.jpg" title="Sean o' pry" alt="sean">
+            </a>
+        </div>
+    </section>
+
+    <script>
+        var lightbox=new SimpleLightbox(".models a");
+    </script>
+    
+    <!--stakeholders section-->
+    <section class="people" id="stakeholders">
+        <div class="stakeholders">
+            <div class="persons">
+                <div class="person-1">
+                    <img src="images/st-1.jpg" alt="Mary Joe">
+                    <p class="name">Mary Joe</p>
+                    <p class="role">Founder</p>
+                </div>
+                <div class="person-2">
+                    <img src="/images/st-2.jpg" alt="James smith">
+                    <p class="name">James Smith</p>
+                    <p class="role">Marketing and PR</p>
+                </div>
+                <div class="person-3">
+                    <img src="/images/st-3.jpg" alt="Sam broode">
+                    <p class="name">Sam Broode</p>
+                    <p class="role">Head Analyst</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--subscription section-->
+    <section class="sub" id="sub">
+        <h3>Subscribe to our newsletter for upadtes</h3>
+        <form action="#">
+            <input type="email" class="email-sub" id="email-sub" required>
+            <input type="submit" class="submit-btn" id="submit-btn">
+        </form>
+    </section>
+
+
+    <!--social section-->
+    <section class="social">
+        <h3>Connect with us on social media</h3>
+        <div class="socicons">
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon> </a>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>&copy;2023.All Rights Reserved</footer>
+
+    <!--scroll to top button-->
+    <i class="scroll-up" id="scroll-up">
+        <img src="" alt="up-arrow" class="socicon up-arrow">
+    </i>
+
+
+    
+
+    <!--javascript functionality for scroll up and light window-->
+    
+    <script>
+
+        const scrollUp=document.querySelector("#scroll-up")
+    
+        scrollUp.addEventListener("click",() =>{window.scrollTo({
+            top:0,left:0,behavior:"smooth",});
+        });
+         
+        
+    </script>
+
+    <!--web page script-->
+    <script src="js/app.js"></script>
+
+    
+  
+    <!-- Ion icons CDN -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    
+
+    
+    </body>
+</html>
